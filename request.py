@@ -13,6 +13,6 @@ def request_details():
 from requests.auth import HTTPBasicAuth
 
 def request_details():
-  ip = '10.66.38.56'
-  auth = HTTPBasicAuth('admin', 'Nutanix/1234')
+  ip = 'X.X.X.X'
+  auth = HTTPBasicAuth('username', 'password')
   return ip,auth
