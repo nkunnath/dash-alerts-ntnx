@@ -6,6 +6,11 @@ Currently, the app displays the alert stats for the year 2020. The data has been
 
 ## Screenshots
 
+![Output sample](https://j.gifs.com/Qnz6EM.gif)
+
+![Output sample](https://j.gifs.com/gZon0Z.gif)
+
+
 ## Requirements
 
 It is always better to create a separate virtual environment running Python 3 for this app, and install all of the required dependencies there. 
