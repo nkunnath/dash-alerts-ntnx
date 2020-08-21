@@ -17,7 +17,8 @@ It is always better to create a separate virtual environment running Python 3 fo
 
 Run in Terminal/Command Prompt:
 
-```git clone https://github.com/nkunnath/dash-alerts-ntnx.git
+```
+git clone https://github.com/nkunnath/dash-alerts-ntnx.git
 cd dash-alerts-ntnx/
 python3 -m pip install virtualenv
 python3 -m virtualenv venv
@@ -48,3 +49,7 @@ Run this app locally by:
 ```python app.py```
 
 Open http://127.0.0.1:8050/ in your browser, you should see the dashboard.
+
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
