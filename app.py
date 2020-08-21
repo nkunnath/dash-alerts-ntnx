@@ -35,6 +35,7 @@ for page in range(1, total_pages + 1):
     response = requests.get(url=URL, auth=auth, headers=header, params={'count':1000, 'page':page}, verify=False)
     response_list.append(response)
 
+LINK_TO_CLUSTER = "https://{}:9440/".format(ip)
 
 # Generate a pandas dataframe with all the alerts
 df = pd.DataFrame(columns=['Title', 'Severity', 'Created-Time'])
@@ -201,12 +202,13 @@ app.layout = html.Div(
             children=[
                 html.Img(id="logo", src=app.get_asset_url("nutanix.jpeg")),
                 html.H4(children="Alerts Dashboard"),
-                html.Div(
-                    html.P(
-                        id="description",
-                        children="Prism Element Alerts by the month for 2020",
-                    )
+                html.Div([
+                  html.P(
+                    id="description",
+                    children="Prism Element Alerts by the month for 2020",
                 ),
+                dcc.Link("Take me to the cluster", id='prismlink', href=LINK_TO_CLUSTER, target="_blank")
+                ]),
             ],
         ),
         html.Div(
