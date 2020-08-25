@@ -1,3 +1,21 @@
+  
+'''
+    ##############################################################################
+    #   Script Name: Alerts Dashboard for Nutanix
+    #   Author: nimal.kunnath@nutanix.com
+    ##############################################################################
+    
+.synopsis
+    This app enables you to visualize the alerts stats from your cluster
+    
+.disclaimer
+    This code is intended as a standalone example.  Subject to licensing restrictions defined on nutanix.dev, this can be downloaded, copied and/or modified in any way you see fit.
+    Please be aware that all public code samples provided by Nutanix are unofficial in nature, are provided as examples only, are unsupported and will need to be heavily scrutinized and potentially modified before they can be used in a production environment.  All such code samples are provided on an as-is basis, and Nutanix expressly disclaims all warranties, express or implied.
+ 
+    All code samples are © Nutanix, Inc., and are provided as-is under the MIT license. (https://opensource.org/licenses/MIT)
+'''
+
+
 import json
 import math
 from datetime import datetime
