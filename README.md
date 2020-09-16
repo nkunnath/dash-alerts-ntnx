@@ -44,11 +44,33 @@ You have to specify the Nutanix cluster that you wish to connect to before runni
 
 To do so, open the `dash-alerts-ntnx/request.py` file using a common text editor like vim. An example is shown in the file as well. You will have to just replace the IP address of the cluster and the credentials you would use to login as well. Save and quit from the file.
 
-Run this app locally by:
+After this you could run this app 
+
+1) On the loopback address locally:
 
 ```python app.py```
 
 Open http://127.0.0.1:8050/ in your browser, you should see the dashboard.
+
+
+
+2) Expose it on the IP address of your machine so it is accessible over the LAN. 
+
+The command in this case would be as below. Replace x.x.x.x with the correct IP address.
+
+
+```perl -i -pe"s/debug=True/debug=True,host='x.x.x.x'/g" app.py```
+
+
+Run the app
+
+```python app.py```
+
+Open http://x.x.x.x:8050/ in your browser, you should see the dashboard.
+
+    Note: Later if you wish to expose it on the loopback address again, run the below to change it back to the default setting.
+
+    perl -i -pe"s/debug=True,host='x.x.x.x'/debug=True/g" app.py
 
 
 ## License
